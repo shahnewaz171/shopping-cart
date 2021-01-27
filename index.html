@@ -23,11 +23,15 @@
                      </div>
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="text" class="form-control text-center" value="1">
-                           <button class="btn btn-default"><i class="fas fa-plus"></i></button>
+                           
+                           <button id="decrement" class="btn btn-default"><i class="fas fa-minus"></i></button>
+
+                           <input id="quantity" type="text" class="form-control text-center" value="1" readonly>
+                           
+                           <button id="increment" class="btn btn-default"><i class="fas fa-plus"></i></button>
                         </div>
-                        <h5>$1219</h5>
+
+                        <h5>$ <span id="productPrice">1219</span></h5>
                         <img src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
@@ -42,7 +46,7 @@
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
                            <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="text" class="form-control text-center" value="1">
+                           <input type="text" class="form-control text-center" value="0" readonly>
                            <button class="btn btn-default"><i class="fas fa-plus"></i></button>
                         </div>
                         <h5>$59</h5>
@@ -59,9 +63,9 @@
                         <h5>Total:</h5>
                      </div>
                      <div class="col-4 col-md-4 status">
-                        <h5>$1,278</h5>
-                        <h5>$0</h5>
-                        <h5>$1,278</h5>
+                        <h5>$ <span id="sub-total">1219</span></h5>
+                        <h5>$ <span id="tax">1</span></h5>
+                        <h5>$ <span id="total">1220</span></h5>
                      </div>
                   </div>
                </div>
@@ -73,5 +77,8 @@
          </div>
       </div>
    </section>
+
+   <!-- JS File -->
+   <script src="js/main.js"></script>
 </body>
 </html>
