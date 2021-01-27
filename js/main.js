@@ -41,8 +41,13 @@ productDecrement.addEventListener('click', function(){
     const quantityNumber = parseFloat(productQuantity);
     const totalQuantity = quantityNumber - 1;
     // console.log(totalQuantity);
-    document.getElementById('quantity').value = totalQuantity;
-
+    if(totalQuantity > 0){
+        document.getElementById('quantity').value = totalQuantity;
+    }
+    else if(totalQuantity <= 0){
+        return false;
+    }
+    
     //for product price
     const itemsPrice = document.getElementById('productPrice').innerText;
     const itemsPriceNumber = parseFloat(itemsPrice);
@@ -66,4 +71,14 @@ productDecrement.addEventListener('click', function(){
     const totalNumber = parseFloat(total);
     const totalAmount = totalNumber - 1219 - 1;
     document.getElementById('total').innerText = totalAmount;
+});
+
+
+//For successfully Shopping
+const checkBtn = document.getElementById('check-btn');
+checkBtn.addEventListener('click', function(){
+    const productSec = document.getElementById('product');
+    productSec.style.display = 'none';
+    const successful = document.getElementById('successful');
+    successful.style.display = 'block';
 });

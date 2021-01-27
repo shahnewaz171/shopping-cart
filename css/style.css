@@ -6,6 +6,9 @@ body{
 	background-color: #F6F5FA;;
 	padding: 45px 0;
 }
+#successful{
+	display: none;
+}
 .total-price{
 	padding-bottom: 15px;
 }
