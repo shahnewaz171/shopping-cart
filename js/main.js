@@ -34,6 +34,10 @@ productIncrement.addEventListener('click', function(){
     document.getElementById('total').innerText = totalAmount;
 });
 
+
+
+
+
 //For Product Decrement
 const productDecrement = document.getElementById('decrement');
 productDecrement.addEventListener('click', function(){
