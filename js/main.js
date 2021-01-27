@@ -45,10 +45,10 @@ productDecrement.addEventListener('click', function(){
     const quantityNumber = parseFloat(productQuantity);
     const totalQuantity = quantityNumber - 1;
     // console.log(totalQuantity);
-    if(totalQuantity > 0){
+    if(totalQuantity >= 0){
         document.getElementById('quantity').value = totalQuantity;
     }
-    else if(totalQuantity <= 0){
+    else if(totalQuantity < 0){
         return false;
     }
     
