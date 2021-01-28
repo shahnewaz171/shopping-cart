@@ -54,8 +54,8 @@ function calculateTotal(){
 function getInputValue(product){
     const productInput = document.getElementById(product + '-quantity');
     const productInputNumber = parseInt(productInput.value);
+    
     return productInputNumber;
-
 }
 
 
