@@ -1,3 +1,11 @@
+//For successfully Shopping
+const checkBtn = document.getElementById('check-btn');
+checkBtn.addEventListener('click', function(){
+    const productSec = document.getElementById('product');
+    productSec.style.display = 'none';
+    const successful = document.getElementById('successful');
+    successful.style.display = 'block';
+});
 //Another way use function
 //Use function
 // document.getElementById('increment').addEventListener('click', function(){
@@ -54,7 +62,7 @@ function calculateTotal(){
 function getInputValue(product){
     const productInput = document.getElementById(product + '-quantity');
     const productInputNumber = parseInt(productInput.value);
-    
+
     return productInputNumber;
 }
 
